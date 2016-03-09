@@ -1,0 +1,36 @@
+"""Programming Foundations w/Python
+   Lesson 1(Use Functions)
+   Creates a program for hard workers who need to take
+   a break at their desk by opening up YouTube video in browser
+   multiple times throughout the day."""
+
+import time
+import webbrowser #imports webbrowser to use all functions
+
+"""time.sleep(10)  #sleeps program for about 10 seconds
+webbrowser.open("https://www.youtube.com/watch?v=71wMLC-am-s")"""
+
+
+#put these two steps in a loop to prompt user to take 3 breaks
+
+
+total_breaks= 3
+break_count=0
+
+#Gives you a music break every 10 seconds while working 3 times
+print("This program started on "+time.ctime()) #import time
+#>>> time.ctime() run in shell before using this here
+while (break_count < total_breaks):
+    time.sleep(10)
+    webbrowser.open("https://www.youtube.com/watch?v=71wMLC-am-s")
+    break_count= break_count + 1 #Ctrl+C to stop program mid way
+
+"""Gives you a music break every 2 hours
+print("This program started on "+time.ctime()) 
+while (break_count < total_breaks):
+    time.sleep(7200 or 2*60*60) #takes seconds, not hours. so 7200 seconds
+    webbrowser.open("https://www.youtube.com/watch?v=71wMLC-am-s")
+    break_count= break_count + 1"""
+
+"""Python Standard Library
+https://docs.python.org/2.7/library"""
